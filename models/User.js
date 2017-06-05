@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt-nodejs');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
+var async = require('async');
 
 const userSchema = new mongoose.Schema({
   email: { type: String, unique: true },

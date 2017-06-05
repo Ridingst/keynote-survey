@@ -1,0 +1,94 @@
+doctype html
+html
+  head
+    title #{title}
+    meta(charset='utf-8')
+    meta(name='csrf-token', content=_csrf)
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    link(rel='stylesheet', href='/user/css/main.css')
+    noscript
+      link(rel='stylesheet', href='/user/css/noscript.css')
+  body
+    // Page Wrapper
+    #page-wrapper
+      // Wrapper
+      #wrapper
+        // Panel (Banner)
+        section.panel.banner.right
+          .content.color0.span-3-75
+            h1.major
+              | Transparency in the world of work   
+            p
+              | We're 
+              strong
+                a(href='https://www.Sliips.com') Sliips
+              | , a team of people dedicated to bringing transparency to the world of work.
+              | We believe that organisations need to be more open with their employees on important topics such as 
+              strong pay
+              |  and 
+              strong career progression
+              | .
+            ul.actions
+              li
+                a.button.special.color1.circle.icon.fa-angle-right(href='#about') Next
+          .image.filtered.span-1-75(data-position='25% 25%')
+            img(src='/images/pic001.jpg', alt='')
+        section.panel.color4-alt#about
+          .intro.color4
+            h2.major Salary Transparency
+            p
+              | We build tools that help facilitate transparency in the world of work and help organisations and individuals engage on meaningful topics such as salary and career progression.
+              br
+              br
+              | Put simply we believe that this information should be more transparent.
+          .inner.columns.divided
+            .span-3-25#survey
+              #surveyContainer
+                h2.major Join The Salary Conversation
+                form#salarySurvey
+                  .field
+                    label(for='salary') Salary
+                    input#salary(type='text', name='salary' placeholder="Your base salary?")
+                  .field
+                    label(for='bonus') Bonus
+                    input#bonus(type='text', name='bonus' placeholder="Your expected bonus")
+                  ul.actions
+                    li
+                      input.button.special(type='submit', value='SHARE')
+                span
+                  | It's 100% annonymous.
+              #successContainer.hidden
+                h2.major Thanks!
+                | We'll show you the results towards the end of the talk.
+                | If you'd like to keep in touch with Sliips and Andrew feel free to enter your email below. If you have any questions, ask away. We'll respond in the next few days.
+                br
+                br
+                form#salarySurvey
+                  .field
+                    label(for='email') Email
+                    input#salary(type='text', name='salary' placeholder="Your email address")
+                  .field
+                    label(for='message') Message
+                    textarea#message(name='message' placeholder="Feel free to add a message or questions here...")
+                  ul.actions
+                    li
+                      input.button.special(type='submit', value='KEEP IN TOUCH')
+
+                | We promise that your email will not be linked to any previous salary data.
+                br
+            .span-1-5
+              ul.contact-icons.color1
+                li.icon.fa-twitter
+                  a(href='https://twitter.com/PaySliips') @paysliips
+                li.icon.fa-facebook
+                  a(href='https://www.facebook.com/sliips') facebook.com/sliips
+                li.icon.fa-instagram
+                  a(href='https://www.instagram.com/sliips/') @sliips
+                li.icon.fa-medium
+                  a(href='https://medium.com/@PaySliips') medium.com/@PaySliips
+                li.icon.fa-linkedin
+                  a(href='https://www.linkedin.com/company/sliips') Sliips
+    script(src='/user/js/jquery.min.js')
+    script(src='/user/js/skel.min.js')
+    script(src='/user/js/main.js')
+    script(src='https://cdn.jsdelivr.net/autonumeric/2.0.0/autoNumeric.min.js')
